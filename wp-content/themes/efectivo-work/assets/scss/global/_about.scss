@@ -1,0 +1,66 @@
+.about__team {
+    @include rel-block;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+
+        li {
+            flex: 0 0 25%;
+            margin-top: 2rem;
+
+            @media (max-width: 767px) {
+                flex: 0 0 100%;
+            }
+
+            a {
+                @include rel-block;
+                max-width: 95%;
+                margin: 0 auto;
+                border: .1rem solid $grey;
+                text-align: center;
+                padding: 2rem;
+                @include link;
+
+                &:hover {
+                    span {
+                        color: $txt
+                    }
+
+                    border: .1rem solid $green;
+
+                }
+
+                img {
+                    max-width: 60%;
+                    display: block;
+                    margin: 0 auto
+                }
+
+                span {
+                    @include rel-block;
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 2rem;
+                    font-size: 1.7rem;
+                    font-weight: bold;
+                    color: $txt;
+
+                    @media (max-width: 992px) {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .text-center {
+        margin-top: 5rem;
+    }
+}
+
+.about__certificates {
+    @include rel-block;
+    margin-top: 8rem;
+}

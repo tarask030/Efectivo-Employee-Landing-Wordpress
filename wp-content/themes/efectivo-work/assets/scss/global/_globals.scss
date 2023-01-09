@@ -1,0 +1,375 @@
+body {
+    position: relative;
+    padding-top: 10rem;
+
+    @include fullHD {
+        padding-top: 12.8rem;
+    }
+    @include mobile {
+        padding-top: 7rem;
+    }
+//     &:before {
+//         border: 16px solid #f5f5f5; 
+//   border-top: 16px solid $yellow; 
+//   border-radius: 50%;
+//   width: 8rem;
+//   height: 8rem;
+//   animation: spin 2s linear infinite;
+//   content:'';
+//   @include abs-block;
+//   left: 50%;
+//   margin-left: -4rem;
+//   top: 30rem;
+//   @include link;
+//     }
+
+//     @keyframes spin {
+//   0% { transform: rotate(0deg); }
+//   100% { transform: rotate(360deg); }
+// }
+
+}
+
+body,
+html {
+    // @media only screen and (max-width: 767px) {
+    //     overflow-x: hidden;
+    // }
+
+    // height: 100%;
+}
+#wpadminbar {
+    @media only screen and (max-width: 1199px) {
+        display: none
+    }
+}
+
+picture img,
+.img-fluid {
+    max-width: 100%;
+    height: auto
+}
+
+/**:focus {
+outline:2px solid red !important;
+}*/
+
+body.using-mouse :focus {
+    outline: none !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+figure {
+    margin: 0
+}
+
+/* LOAD */
+.load {
+    @include rel-block;
+    opacity: 0;
+    @include link;
+    height: 100%;
+
+    @media only screen and (max-width: 767px) {
+        opacity: 1
+    }
+}
+
+body.page-template-index {
+    .load {
+        opacity:1
+    }
+}
+
+.full {
+    @media only screen and (min-width: 1200px) {
+        padding-left: calc(calc(100% - 1200px) / 2);
+    }
+
+    @media only screen and (min-width: 1400px) {
+        padding-left: calc(calc(100% - 1364px) / 2);
+    }
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+article
+    {
+    @include rel-block;
+    margin: 0 auto;
+
+    @media (max-width: 992px) {
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 0 5%;
+    }
+    @media (max-width: 1199px) {
+        width: 99rem !important;
+        max-width: 100%;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        width: 120rem !important;
+        max-width: 100%;
+    }
+
+    @media only screen and (min-width: 1500px) {
+        width: 138rem !important;
+        max-width: 100%;
+    }
+}
+
+.cn-button.bootstrap {
+    background: black !important
+}
+
+.row {
+    @media only screen and (min-width: 1400px) {
+        width: 100%;
+    }
+}
+
+
+
+body.admin-bar .navbar__fixed {
+    top: 3.2rem;
+}
+
+.menu-open {
+    overflow: hidden !important;
+    max-height: 100% !important;
+}
+
+.wpcf7 .ajax-loader {
+    @include rel-block;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+#cn-notice-text {
+    color: $white !important;
+    font-size: 13px;
+}
+
+// .cookie-notice-container {
+//     padding: 5px 15px !important
+// }
+
+
+.grecaptcha-badge {
+    display: none
+}
+
+.fancybox-active {
+    height: inherit
+}
+
+#cookie-notice {
+    position: fixed;
+    left: auto !important;
+    right: 20px !important;
+    bottom: 20px;
+    min-width: 400px !important;
+    width: 400px !important;
+    padding: 15px !important;
+    z-index: 1000;
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 10%);
+    font-size: 1.4rem;
+    background: #f6f6f6 !important;
+
+    @media (max-width: 767px) {
+        right: 0px !important;
+        bottom: 0px;
+        min-width: 100% !important;
+        width: 100% !important;
+    }
+}
+
+#cookie-notice .cookie-notice-container {
+    display: block !important;
+}
+
+#cookie-notice.cookie-notice-hidden {
+    display: none !important
+}
+
+#cn-notice-text {
+    color: $txt !important;
+    font-size: 12px;
+    line-height: 140%;
+    margin-bottom: 2rem;
+    font-family: $font !important;
+}
+
+.cn-close-icon {
+    top: 3.5rem !important;
+}
+
+#cookie-notice .cn-button {
+    color: $white !important;
+}
+
+.link-ani {
+    @include rel-block;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: .1rem;
+        bottom: -.2rem;
+        left: 0;
+        background-color: $txt;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    &:hover {
+        color: $txt;
+
+        &:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    }
+}
+
+
+.plus {
+    display: block;
+    width: 5.6rem;
+    height: 5.6rem;
+    background: $red url('../icons/icon-plus.svg') center no-repeat;
+    border-radius: 50%;
+    @include link;
+
+    &:hover {
+        background: $red url('../icons/icon-plus.svg') center no-repeat;
+    }
+}
+
+// APLA PRAWA
+.apla-right {
+    @include rel-block;
+
+    &:before {
+        @include abs-block;
+        top: 0;
+        right: 0;
+        content: '';
+        background: $grey-light;
+        height: 100%;
+        width: 56.34146341463414%;
+        z-index: -1;
+
+        @media only screen and (max-width: 992px) {
+            width: 100%;
+        }
+
+    }
+}
+
+body.single-realizations {
+    .apla-right {
+        &:before {
+            width: 50%;
+
+            @media (max-width: 992px) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+body.page-template-index {
+    .apla-right {
+        &:before {
+            top: 25rem;
+            @media (max-width: 767px) {
+                display: none
+            }
+        }
+    }
+}
+
+.apla-left {
+    @include rel-block;
+
+    &:after {
+        @include abs-block;
+        top: 0;
+        left: 0;
+        content: '';
+        background: $grey-light;
+        height: 100%;
+        width: 56.34146341463414%;
+        z-index: -1;
+
+        @media only screen and (max-width: 992px) {
+            width: 100%;
+        }
+    }
+}
+
+
+// IKONY PRZY FOTCE
+.icons {
+    @include abs-block;
+    bottom: 8rem;
+    right: -2.8rem;
+    width: 5.6rem;
+
+    flex: 0 0 50rem;
+
+    @media only screen and (max-width: 992px) {
+        right: -1.8rem;
+    }
+
+
+    a {
+        @include rel-block;
+        width: 5.6rem;
+        height: 5.6rem;
+        background: $red;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+        @include link;
+
+        &:hover {
+            transform: translateY(-.5rem);
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .icons-mail {
+        background: $red url('../icons/icon-person-mail.svg') center no-repeat;
+    }
+
+    .icons-phone {
+        background: $red url('../icons/icon-person-phone.svg') center no-repeat;
+    }
+
+    .icons-linkedin {
+        background: $red url('../icons/icon-person-linkeind.svg') center no-repeat;
+    }
+}
+
+
+.txt-right {
+    @media (min-width: 992px) {
+        text-align: right;
+    }
+}

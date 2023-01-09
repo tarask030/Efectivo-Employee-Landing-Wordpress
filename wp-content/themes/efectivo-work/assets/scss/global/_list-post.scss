@@ -1,0 +1,172 @@
+.list-post {
+    @include rel-block;
+    background: $bgboxes;
+    padding-top: 7rem;
+
+    // KATEGORIE
+    &-category {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-bottom: 7rem;
+
+        li {
+            margin-right: 2rem;
+
+            a {
+                display: flex;
+                align-items: center;
+                height: 4.6rem;
+                padding: 0 3.2rem;
+                border-radius: 2.6rem;
+                border: 1px solid $purple;
+                background-color: #ffffff;
+                font-size: 1.6rem;
+                color: $purple;
+                font-weight: 600;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: normal;
+                text-align: left;
+                @include bg;
+
+                &:hover {
+                    background: $purple;
+                    color: $white;
+                }
+            }
+        }
+
+        .current-cat {
+            a {
+                background: $purple;
+                color: $white;
+            }
+        }
+    }
+
+    // NAGLOWEK
+
+    &-header {
+        @include rel-block;
+        max-width: 90rem;
+        text-align: center;
+        margin: 0 auto 6rem;
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 120%;
+            margin-bottom: 2rem;
+
+            @include fullHD {
+                font-size: 5rem;
+            }
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    // WPISY
+
+    &-loop {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(42.8rem, 42.8rem));
+        grid-gap: 4rem;
+        padding-bottom: 6rem;
+
+        li {
+            padding-bottom: 4rem;
+
+            a {
+                background: $white;
+                padding: 4rem;
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 100%;
+                align-content: space-between;
+                border-radius: .4rem;
+                @include link;
+
+                &:hover {
+                    box-shadow: 1rem 1.6rem 1.8rem rgba(0, 0, 0, 0.16);
+
+                    .row {
+                        span {
+                            opacity: 1;
+                            color: $purple;
+                        }
+                    }
+                }
+
+                h3 {
+                    color: $txt;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    font-style: normal;
+                    letter-spacing: normal;
+                    line-height: 140%;
+                    margin-bottom: 2rem;
+                }
+
+                p {
+                    margin-bottom: 0rem;
+                }
+
+                .row {
+                    color: $purple;
+                    margin-top: 4.8rem;
+                    align-items: center;
+
+                    .col-right {
+                        align-items: center;
+                    }
+
+                    span {
+                        margin-right: 1rem;
+                        opacity: 0;
+                        @include link;
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                        font-style: normal;
+                        letter-spacing: normal;
+                        line-height: normal;
+                        text-align: right;
+                        color: $txt;
+                    }
+                }
+            }
+        }
+    }
+}
+
+body.page-template-template-page-subsidies, body.page-template-template-page-subsidies-cat {
+    .list-post-loop li a .row span {
+        opacity: 1;
+        &:after {
+                    display: block;
+                    content: '';
+                    position: relative;
+                    width: 100%;
+                    max-width: 22rem;
+                    height: .1rem;
+                    margin-top: 0rem;
+                    transform: scaleX(0);
+                    background-color: $purple;
+                    transform-origin: bottom right;
+                    transition: transform 0.25s ease-out;
+                }
+    }
+
+    .list-post-loop li a:hover {
+        .row span:after {
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                    }
+                }
+}

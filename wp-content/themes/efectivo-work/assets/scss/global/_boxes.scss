@@ -1,0 +1,72 @@
+.box-50-50 {
+    @include rel-block;
+    padding: 8rem 0;
+
+    .box-50-50-cnt {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 113rem;
+        margin: 0 auto;
+    }
+
+    .foto {
+        flex: 0 0 58.584070796460175%;
+
+        img {
+            border-radius: 4rem;
+        }
+    }
+
+    .cnt {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        .subtitle {
+            font-size: 1.8rem;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: 2.88px;
+            text-transform: uppercase;
+            color: $purple;
+            margin-bottom: .5rem;
+        }
+
+        h2 {
+            margin-bottom: 2rem;
+            color: $btn-base;
+            font-size: 5rem;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 100%;
+        }
+
+        p {
+            margin-bottom: 2rem;
+        }
+
+        .btn-base {
+            margin-top: 1rem;
+        }
+
+        ul {
+            @include rel-block;
+            margin-top: 2rem;
+            li {
+                @include rel-block;
+                margin-bottom: 2rem;
+                .btn-base {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    &--bg {
+        background: $bgboxes;
+    }
+}

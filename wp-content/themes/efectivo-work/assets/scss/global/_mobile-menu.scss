@@ -1,0 +1,199 @@
+.menu-widget {
+
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: 56.5rem;
+    width: 100%;
+    height: 100%;
+    background: $yellow;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    @include link;
+
+    &-container {
+        padding: 6rem 6rem 6rem 12rem;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: auto;
+
+        @include mobile {
+            padding: 2rem 2rem 4rem 2rem;
+        }
+    }
+
+    // HEADER
+    &-header {
+
+        @include mobile {
+            .row {
+                .col {
+                    flex: 0 0 50%;
+                }
+            }
+        }
+
+        ul {
+            display: flex;
+
+            li {
+                &:first-child {
+                    padding-right: 2rem;
+                }
+
+                height: 3.4rem;
+                display: flex;
+                align-items: center;
+
+                a {
+                    position: relative;
+                    max-width: 22rem;
+
+                    &:after {
+                        display: block;
+                        content: '';
+                        position: relative;
+                        width: 100%;
+                        max-width: 22rem;
+                        height: .1rem;
+                        margin-top: 0rem;
+                        transform: scaleX(0);
+                        background-color: #242424;
+                        transform-origin: bottom right;
+                        transition: transform 0.25s ease-out;
+                    }
+
+                    &:hover {
+                        color: $black;
+
+                        &:after {
+                            transform: scaleX(1);
+                            transform-origin: bottom left;
+                        }
+                    }
+                }
+            }
+            .current-lang {
+                a {
+                    &:after {
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                    }
+                }
+            }
+        }
+
+        button {
+            height: 3.4rem;
+            color: $txt;
+            font-size: 1.6rem;
+            font-weight: 600;
+            background: $yellow url(../svg/bg-hamburger-close.svg) top right no-repeat;
+            box-shadow: none;
+            outline: 0;
+            border: 0;
+            width: 12rem;
+            text-align: left;
+            cursor: pointer;
+
+            @include mobile {
+                .txt {
+                    display: none;
+                }
+
+                background: url(../svg/bg-hamburger-mobile-close.svg) top right no-repeat $yellow;
+                width: 3.2rem;
+                height: 1.9rem;
+            }
+        }
+    }
+
+    // MENU
+    &-nav {
+        ul {
+            li {
+                @include rel-block;
+                margin-bottom: 1.6rem;
+
+                a {
+                    font-size: 2.2rem;
+                    font-weight: 500;
+                    font-style: normal;
+                    letter-spacing: normal;
+                    line-height: 120%;
+                    color: $txt;
+                    display: inline-block;
+
+                    &:after {
+                        display: block;
+                        content: '';
+                        position: relative;
+                        width: 100%;
+                        max-width: 22rem;
+                        height: .1rem;
+                        margin-top: 0rem;
+                        transform: scaleX(0);
+                        background-color: #242424;
+                        transform-origin: bottom right;
+                        transition: transform 0.25s ease-out;
+                    }
+
+                    &:hover {
+                        color: $black;
+
+                        &:after {
+                            transform: scaleX(1);
+                            transform-origin: bottom left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // CONTACT
+    &-contact {
+        @include rel-block;
+
+        a {
+            transition: color 0.25s ease-out;
+            display: inline-block;
+
+            &:after {
+                display: block;
+                content: '';
+                position: relative;
+                width: 100%;
+                max-width: 22rem;
+                height: .1rem;
+                margin-top: 0rem;
+                transform: scaleX(0);
+                background-color: #242424;
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
+            }
+
+            &:hover {
+                color: $black;
+
+                &:after {
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                }
+            }
+        }
+    }
+}
+
+body.is-menu {
+    overflow: hidden;
+
+    .menu-widget {
+        opacity: 1;
+        visibility: visible
+    }
+}

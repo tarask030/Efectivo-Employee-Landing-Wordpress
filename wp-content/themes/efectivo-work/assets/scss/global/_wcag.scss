@@ -1,0 +1,214 @@
+.sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+    clip: auto !important;
+    -webkit-clip-path: none !important;
+    clip-path: none !important;
+    height: auto !important;
+    margin: auto !important;
+    overflow: visible !important;
+    width: auto !important;
+    white-space: normal !important;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+body.wcag-contrast {
+
+    .box__default,
+    .typo1,
+    #footer .cnt .info ul li .icon i,
+    .main .container,
+    .price ul li:nth-child(2n),
+    .services__list ul li:first-child,
+    .services__list ul li:nth-child(4),
+    .services__list ul li:nth-child(7),
+    .services__list ul li:nth-child(10),
+    .services__list ul li:nth-child(12),
+    .services__list ul li,
+    .services__list ul li .col-full,
+    .home__slider-item {
+        background: $black;
+    }
+
+    .form .col label,
+    .typo1,
+    #footer .cnt .info ul li .icon i,
+    #footer .cnt .info .facebook i,
+    #footer .copy .container .col,
+    p,
+    ol li,
+    ul li,
+    .form .info,
+    .services__list ul li:first-child h2,
+    .services__list ul li:first-child p,
+    .services__list ul li:nth-child(4) h2,
+    .services__list ul li:nth-child(4) p,
+    .services__list ul li:nth-child(7) h2,
+    .services__list ul li:nth-child(7) p,
+    .services__list ul li:nth-child(10) h2,
+    .services__list ul li:nth-child(10) p,
+    .services__list ul li:nth-child(12) h2,
+    .services__list ul li:nth-child(12) p,
+    .services__list ul li h2,
+    .services__list ul li p {
+        color: yellow !important
+    }
+
+    #footer .cnt .info ul li .icon,
+    .main-cnt ul li:before,
+    .download__list ul li:before {
+        background: yellow
+    }
+
+    .gallery ul li {
+        border: .5rem solid black;
+    }
+
+    .btn__blue,
+    .btn__back,
+    .box__default .col:last-child a,
+    .btn__link,
+    .home__slider-item a {
+        background: black;
+        border: .1rem solid yellow;
+    }
+
+
+}
+
+body.wcag-font-size-1 .main,
+body.wcag-font-size-1 {
+
+    .navbar__fixed nav ul li a {
+        font-size: 1.8rem;
+        margin: 0 .5rem;
+    }
+
+    .home__slider-item .typ1 {
+        font-size: 2.8rem
+    }
+
+    .home__slider-item .typ2 {
+
+        font-size: 4.2rem;
+
+        @media (min-width: 1600px) {
+            font-size: 6.2rem;
+        }
+    }
+
+    .btn__blue,
+    .btn__back,
+    .box__default .col:last-child a,
+    .btn__link,
+    .home__slider-item a {
+        font-size: 1.8rem
+    }
+
+    .typo1, h2 {
+        font-size: 2.8rem;
+    }
+
+    .box__default .col:last-child h3 {
+        font-size: 3.2rem
+    }
+
+    li, span, p {
+        font-size: 1.7rem;
+        @media only screen and (min-width: 1680px) {
+            font-size: 1.8rem
+        }
+    }
+
+    #footer .cnt .info ul li a, #footer .cnt .info ul li p, #footer .copy a, #footer .copy span, .hero .breadcrumb a, .hero .breadcrumb span {
+        font-size: 1.6rem;
+    }
+
+    .hero h1 {
+        font-size: 3.2rem;
+    }
+
+    .form .col label {font-size: 1.7rem}
+
+
+
+
+}
+
+body.wcag-font-size-2 .main,
+body.wcag-font-size-2 {
+    .navbar__fixed nav ul li a {
+        font-size: 1.9rem;
+        margin: 0 .5rem;
+    }
+
+    .home__slider-item .typ1 {
+        font-size: 3rem
+    }
+
+    .home__slider-item .typ2 {
+
+        font-size: 4.4rem;
+
+        @media (min-width: 1600px) {
+            font-size: 6.4rem;
+        }
+    }
+
+    .btn__blue,
+    .btn__back,
+    .box__default .col:last-child a,
+    .btn__link,
+    .home__slider-item a {
+        font-size: 2rem
+    }
+
+    .typo1, h2 {
+        font-size: 3rem;
+    }
+
+    .box__default .col:last-child h3 {
+        font-size: 3.4rem
+    }
+
+    li, span, p {
+        font-size: 1.9rem;
+        @media only screen and (min-width: 1680px) {
+            font-size: 2rem
+        }
+    }
+
+    #footer .cnt .info ul li a, #footer .cnt .info ul li p, #footer .copy a, #footer .copy span, .hero .breadcrumb a, .hero .breadcrumb span {
+        font-size: 1.8rem;
+    }
+
+    .hero h1 {
+        font-size: 3.4rem;
+    }
+
+    .form .col label {font-size: 1.9rem}
+
+}

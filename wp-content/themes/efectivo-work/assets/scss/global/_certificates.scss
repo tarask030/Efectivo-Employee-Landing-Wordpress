@@ -1,0 +1,124 @@
+.certificates {
+    @include rel-block;
+    background: #F5F5F5;
+    padding: 10rem 0;
+
+    @media only screen and (max-width: 991px) {
+        padding: 5rem 0;
+    }
+
+
+    h2 {
+        text-align: center;
+        margin-bottom: 6rem;
+
+        @media only screen and (max-width: 991px) {
+            margin-bottom: 0rem
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            flex: 0 0 50%;
+            display: flex;
+            position: relative;
+            /*justify-content: center;*/
+
+            @media only screen and (max-width: 1199px) {
+                display: block;
+                flex: 0 0 100%;
+                padding-top: 3rem;
+            }
+
+            img {
+                z-index: 1;
+
+                @media only screen and (max-width: 1199px) {
+                    width: 15rem;
+                    height: auto;
+                    margin: 0 auto;
+                    display: block;
+                }
+
+            }
+
+            a {
+                font-size: 2rem
+            }
+
+            &:last-child {
+                justify-content: flex-end;
+
+                .certificates__txt {
+                    justify-content: flex-start;
+                    padding-left: 3rem;
+                    padding-right: 0px;
+                    left: 2rem;
+                    right: 8rem;
+
+                    @media only screen and (max-width: 1199px) {
+                        left: 0;
+                        right: 0;
+                        padding-left: 0;
+                        justify-content: center;
+                    }
+
+                }
+            }
+
+            @media only screen and (min-width: 1200px) {
+
+                &:first-child {
+                    .row {align-items: flex-end;}
+                }
+            }
+
+            @media only screen and (max-width: 1199px) {
+                .row {align-items: center;}
+            }
+
+            .row {
+                flex-direction: column;
+            }
+        }
+    }
+
+    &__txt {
+        width: 53rem;
+        height: 15rem;
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: flex-end;
+        z-index: 0;
+        top: 30%;
+        left: 8rem;
+        transform: translateY(-30%);
+        background: white;
+        padding-right: 3rem;
+
+        font-family: $font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4rem;
+        line-height: 140%;
+
+        @media only screen and (max-width: 1199px) {
+            position: relative;
+            top: 0;
+            transform: translateY(0%);
+            left: 0;
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+            justify-content: center;
+            height: 8rem;
+            font-size: 3rem;
+            margin-top: 2rem;
+
+        }
+    }
+}

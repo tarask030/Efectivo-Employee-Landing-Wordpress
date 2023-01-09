@@ -1,0 +1,74 @@
+/* MIXIN */
+
+@mixin rel-block{
+    position: relative;
+    display: block;
+}
+
+@mixin abs-block
+{
+    position: absolute;
+    display: block;
+}
+
+@mixin shadow {
+    -webkit-box-shadow: 3px 5px 18px 1px rgba(0, 0, 0, 0.2);
+                    box-shadow: 3px 5px 18px 1px rgba(0, 0, 0, 0.2);
+}
+
+@mixin fotoBg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+
+    @media (max-width: 1600px) {
+    object-fit: cover;
+    object-position: center;
+    }
+}
+
+
+@mixin link
+{
+    -webkit-transition: all 350ms ease;
+       -moz-transition: all 350ms ease;
+        -ms-transition: all 350ms ease;
+         -o-transition: all 350ms ease;
+            transition: all 350ms ease;
+}
+
+@mixin color {
+    transition: color 0.25s ease-out;
+}
+@mixin bg {
+    transition: background 0.25s ease-out;
+}
+
+@mixin bigL {
+	text-transform: uppercase;
+}
+
+
+@mixin mobile {
+  @media (max-width: 767px) { @content; }
+}
+@mixin tablet {
+  @media screen and (min-width: 768px) and (max-width: 991px) { @content; }
+}
+@mixin max {
+  @media (max-width: 991px) { @content; }
+}
+@mixin tabletBig {
+  @media (min-width: 922px) { @content; }
+}
+
+@mixin fullHD {
+  @media (min-width: 1680px) { @content; }
+}

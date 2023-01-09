@@ -1,0 +1,47 @@
+.banner {
+    @include rel-block;
+
+    &-txt {
+        @include abs-block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 70rem;
+
+        @media only screen and (max-width: 767px) {
+            width: 100%;
+        }
+
+        .slogan {
+            color: $white;
+            font-family: $font;
+            font-size: 3.6rem;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 127%;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+
+            @media only screen and (max-width: 767px) {
+                font-size: 2rem;
+
+                br {
+                    display: none
+                }
+            }
+        }
+
+        a {
+            margin-top: 4rem;
+
+            @media only screen and (max-width: 767px) {
+                margin-top: 2rem;
+            }
+
+
+        }
+    }
+}

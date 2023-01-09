@@ -1,0 +1,17 @@
+.btn-white {
+    display: inline-flex;
+    background: $white;
+    height: 5.6rem;
+    padding: 0 3.2rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 100%;
+    color: $blue;
+    align-items: center;
+    border-radius: 1rem;
+    border: 0;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+}

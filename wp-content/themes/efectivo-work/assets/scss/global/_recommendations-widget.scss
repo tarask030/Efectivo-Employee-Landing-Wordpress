@@ -1,0 +1,140 @@
+.recommendations-widget {
+    display: none;
+    position: fixed;
+    top: 0rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0;
+    z-index: -1;
+    padding: 5rem 5%;
+    visibility: hidden;
+    @include link;
+    transform: translateY(10rem);
+
+    .col {
+        flex: 0 0 60%;
+    }
+
+    .col-right {
+        flex: 1;
+        padding-top: 1rem;
+    }
+
+    .title {
+        color: #ffffff;
+        font-family: $font;
+        font-size: 2.4rem;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 140%;
+        text-align: left;
+        margin-bottom: 5rem;
+    }
+
+    .close {
+        width: 1.3rem;
+        height: 1.3rem;
+        background: none;
+        box-shadow: none;
+        border: 0;
+    }
+
+    &-cnt {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        border-radius: 10px;
+        border: 1px solid #f0f0f0;
+        background-color: #ffffff;
+        padding: 4rem 3rem;
+        @include rel-block;
+
+        .icon {
+            top: -1.4rem;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .raiting {
+            margin-bottom: 2rem;
+            margin-top: .5rem;
+
+        }
+
+        .txt,
+        .name,
+        .date {
+            color: #000000;
+            font-family: $font;
+            font-size: 1.4rem;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 130%;
+        }
+
+        .name {
+            font-weight: 700;
+            margin-bottom: .5rem;
+        }
+
+    }
+
+
+    .swiper-button-next,
+        .swiper-button-prev {
+            width: 5.6rem;
+            height: 5.6rem;
+            bottom: 0rem;
+            margin-top: 0;
+            z-index: 2;
+
+            &:after {
+                display: none;
+            }
+
+            @media (max-width: 767px) {
+                width: 4rem;
+                height: 4rem;
+                border: .1rem solid $red;
+                border-radius: 50%;
+            }
+        }
+
+        .swiper-button-next {
+            background: $white url(../icons/icon-arrow-slider-right-red.svg) top left no-repeat;
+            right: auto;
+            left: 17.6rem;
+
+            @media (max-width: 767px) {
+                left: auto;
+            right: 0rem;
+                background: $white url(../icons/icon-arrow-slider-right-red.svg) center no-repeat;
+            }
+        }
+
+        .swiper-button-prev {
+            background: url(../icons/icon-arrow-slider-right-red.svg) top left no-repeat;
+            transform: rotate(180deg);
+            right: auto;
+            left: 10rem;
+
+            @media (max-width: 767px) {
+                right: auto;
+                left: 0rem;
+                background: $white url(../icons/icon-arrow-slider-right-red.svg) center no-repeat;
+            }
+        }
+}
+
+body.is-reco {
+    .recommendations-widget {
+        display: block;
+        opacity: 1;
+        z-index: 1100;
+        visibility: visible;
+        transform: translateY(0rem);
+        @include link;
+    }
+}

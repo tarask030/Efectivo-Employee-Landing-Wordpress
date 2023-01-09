@@ -1,0 +1,86 @@
+.box-left {
+    @include rel-block;
+
+    .row {
+        .col {
+            &:last-child {
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+
+                @media (max-width: 767px) {
+                    @include rel-block;
+                }
+            }
+
+            img {
+                border-radius: 1rem;
+            }
+
+            .txt {
+                max-width: 80.71428571428572%;
+                padding-bottom: 7rem;
+
+                @media (max-width: 767px) {
+                    max-width: 100%;
+                    padding-bottom: 0rem;
+                    padding-top: 3rem;
+                }
+
+                .typo1 {
+                    margin-bottom: 3rem;
+
+                    @media (max-width: 767px) {
+                        margin-bottom: 2rem;
+                        text-align: center;
+                    }
+                }
+
+                p {
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    @media (max-width: 767px) {
+                        margin-bottom: 2rem;
+                        text-align: center;
+                    }
+                }
+
+                a {
+                    margin-top: 4rem;
+
+                    @media (max-width: 767px) {
+                        margin-top: 3rem;
+                    }
+                }
+
+                @media (max-width: 767px) {
+                    div {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+body.page-id-10 {
+    .box-left {
+        margin-top: -8rem;
+
+        @media (max-width: 767px) {
+            margin-top: 0;
+
+        }
+    }
+}
+
+body.services-template-single-services_chargers {
+    .box-left {
+        margin-top: 10rem;
+    }
+
+    .box-left .typo1 {
+        font-size: 3rem;
+    }
+}

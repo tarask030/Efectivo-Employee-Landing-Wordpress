@@ -1,0 +1,76 @@
+.gallery {
+    @include rel-block;
+    margin-top: 5rem;
+
+    ul {
+        display: flex;
+        margin-bottom: 3rem !important;
+        flex-wrap: wrap;
+
+        li {
+            padding-left: 0px !important;
+            border: .5rem solid $white;
+            flex: 0 0 33.333%;
+
+            @media (max-width: 767px) {
+                flex: 0 0 100%
+            }
+
+            &:before {
+                display: none !important;
+            }
+
+            a {
+                @include rel-block;
+                overflow: hidden;
+
+                img {
+                    @include link;
+                }
+
+                &:hover {
+                    img {
+                        transform: scale(1.05)
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+body.page-template-index-php {
+    .gallery {
+        margin-bottom: 8rem;
+
+        @media (max-width: 767px) {
+            margin-bottom: 5rem;
+            margin-top: 0;
+        }
+
+        ul {
+            @media (max-width: 767px) {
+                margin-bottom: 0;
+            }
+            li {
+                flex: 0 0 25%;
+
+                @media (max-width: 767px) {
+                    flex: 0 0 50%;
+                }
+            }
+        }
+    }
+
+    .gallery ul li:first-child {
+        @media (min-width: 768px) {
+            border-left: 0;
+        }
+    }
+
+    .gallery ul li:last-child {
+        @media (min-width: 768px) {
+            border-right: 0;
+        }
+    }
+}

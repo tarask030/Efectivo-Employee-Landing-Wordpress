@@ -1,0 +1,230 @@
+.lead {
+    @include rel-block;
+    background: $grey-light;
+    padding-top: 18rem;
+    margin-top: -8rem;
+
+    text-align: center;
+
+    @media only screen and (max-width: 992px) {
+        margin-top: 5rem !important;
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+    }
+
+
+    .typo1 {
+        text-align: center;
+        margin-bottom: 3.5rem;
+
+        @media only screen and (max-width: 992px) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    p {
+        max-width: 68.5rem;
+        margin: 0 auto 2rem;
+
+        @media only screen and (max-width: 992px) {
+            br {
+                display: none
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        strong {
+            font-size: 2.4rem;
+            font-weight: 700;
+            display: inline-block;
+            line-height: 130%;
+
+            @media only screen and (max-width: 992px) {
+                font-size: 2rem;
+                line-height: 150%;
+            }
+
+            &:first-child {
+                margin-top: 4rem;
+
+                @media only screen and (max-width: 992px) {
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+
+    .image {
+        img {
+            border-radius: 1rem;
+        }
+    }
+
+    .btn-list {
+        display: flex;
+        justify-content: center;
+        padding-top: 4rem;
+        margin-bottom: 0;
+
+        @media only screen and (max-width: 992px) {
+            flex-direction: column;
+            padding-top: 3rem;
+        }
+
+        li {
+            margin-left: 3rem;
+
+            &:first-child {
+                margin-left: 0
+            }
+
+            @media (min-width: 1600px) {
+                margin-left: 4rem;
+            }
+
+            &:firs-child {
+                margin-left: 0;
+            }
+
+            @media only screen and (max-width: 992px) {
+                margin-left: 0;
+                margin-bottom: 1.5rem;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+body.page-id-10 {
+    .lead {
+        padding-bottom: 21rem;
+    }
+}
+
+body.page-id-17 {
+    .lead {
+        padding-bottom: 18rem;
+    }
+}
+
+body.page-id-13 {
+    .lead {
+        padding-bottom: 9.5rem;
+    }
+}
+
+body.services-template-single-services {
+    .lead {
+        padding-bottom: 12rem;
+    }
+}
+
+body.services-template-single-services_chargers {
+    .lead {
+        padding-bottom: 22rem;
+    }
+}
+
+body.single-industries {
+    .lead {
+        padding-bottom: 12rem;
+    }
+}
+
+.post-lead {
+    @include rel-block;
+    background: $grey-light;
+    padding-top: 16rem;
+    padding-bottom: 8rem;
+    margin-top: -8rem;
+    margin-bottom: 6rem;
+
+    @media only screen and (max-width: 992px) {
+        margin-top: 3rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    // SOCIAL
+    .post-social {
+        display: inline-block;
+        position: absolute;
+        top: 1rem;
+        left: 9rem;
+
+        @media only screen and (max-width: 992px) {
+            @include rel-block;
+            top: 0;
+            left: 0;
+            margin-bottom: 3rem;
+        }
+
+        .at-icon-wrapper {
+            border-radius: 50%;
+            filter: grayscale(1);
+        }
+
+        .addthis_default_style {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            @media only screen and (max-width: 992px) {
+                flex-direction: row;
+            }
+
+            a {
+                @include rel-block;
+                cursor: pointer;
+                transform: translateY(0);
+                @include link;
+
+                &:hover {
+                    transform: translateY(-.5rem);
+                }
+
+                margin-bottom: 2.5rem;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                @media only screen and (max-width: 992px) {
+                    margin: 0 .5rem;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+        }
+    }
+
+    p {
+        &:first-child {
+            font-size: 3rem;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 133%;
+            margin-bottom: 6rem;
+
+            @media only screen and (max-width: 992px) {
+                margin-bottom: 3rem;
+                font-size: 2rem;
+            }
+        }
+    }
+}

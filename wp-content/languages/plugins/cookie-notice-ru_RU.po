@@ -1,0 +1,259 @@
+# Translation of Plugins - Cookie Notice &amp; Compliance for GDPR / CCPA - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Cookie Notice &amp; Compliance for GDPR / CCPA - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-01-08 09:14:58+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.0-alpha.3\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Cookie Notice &amp; Compliance for GDPR / CCPA - Stable (latest release)\n"
+
+#: includes/settings.php:81
+msgid "Button color"
+msgstr "Цвет кнопки"
+
+#: cookie-notice.php:1120
+msgid "Cancel"
+msgstr "Отмена"
+
+#: includes/welcome.php:376
+msgid "Checking..."
+msgstr "Проверка..."
+
+#: includes/settings.php:544
+msgid "Add Compliance features"
+msgstr "Добавить функции соответствия"
+
+#: includes/settings.php:200
+msgid "Cookies"
+msgstr "Файлы cookie"
+
+#: includes/welcome.php:635
+msgid "Don't have an account yet?"
+msgstr "У вас еще нет учетной записи?"
+
+#: includes/welcome.php:610
+msgid "Account Login"
+msgstr "Вход в учетную запись"
+
+#: includes/welcome.php:535
+msgid "Already have an account?"
+msgstr "Уже есть учетная запись?"
+
+#: includes/settings.php:505 includes/settings.php:506
+#: includes/settings.php:507 includes/settings.php:508
+#: includes/settings.php:519 includes/settings.php:538
+msgid "Active"
+msgstr "Активна"
+
+#: includes/settings.php:401 includes/settings.php:417
+msgid "App ID"
+msgstr "ID приложения"
+
+#: includes/settings.php:402 includes/settings.php:418
+msgid "App Key"
+msgstr "Ключ приложения"
+
+#: includes/settings.php:409
+msgid "Cache"
+msgstr "Кэш"
+
+#: includes/welcome.php:463
+msgid "Adjust the banner color scheme"
+msgstr "Настройка цветовой схемы баннера"
+
+#: includes/welcome.php:449
+msgid "Banner Design"
+msgstr "Оформление баннера"
+
+#: includes/welcome.php:403
+msgid "Banner Compliance"
+msgstr "Соответствие баннеров"
+
+#: includes/welcome.php:567 includes/welcome.php:670
+msgid "Card Number"
+msgstr "Номер карты"
+
+#: includes/welcome.php:427
+msgid "CCPA"
+msgstr "CCPA"
+
+#: includes/welcome.php:459
+msgid "Center"
+msgstr "По центру"
+
+#: includes/settings.php:59
+msgid "Dark"
+msgstr "Тёмная"
+
+#: includes/settings.php:75
+msgid "Banner"
+msgstr "Баннер"
+
+#: includes/settings.php:687
+msgid "Body"
+msgstr "Тело"
+
+#: includes/settings.php:441
+msgid "Button class"
+msgstr "Класс кнопки"
+
+#: includes/settings.php:63
+msgid "Automatic"
+msgstr "Автоматически"
+
+#: cookie-notice.php:1057
+msgid "Settings"
+msgstr "Настройки"
+
+#: includes/settings.php:107
+msgid "Footer"
+msgstr "Подвал"
+
+#: includes/settings.php:154
+msgid "No"
+msgstr "Нет"
+
+#: includes/settings.php:76 includes/settings.php:422
+msgid "Message"
+msgstr "Сообщение"
+
+#: includes/settings.php:438
+msgid "Position"
+msgstr "Позиция"
+
+#: includes/settings.php:69
+msgid "Custom link"
+msgstr "Пользовательская ссылка"
+
+#: includes/settings.php:68
+msgid "Page link"
+msgstr "Ссылка на страницу"
+
+#: includes/settings.php:80
+msgid "Text color"
+msgstr "Цвет текста"
+
+#: includes/settings.php:82
+msgid "Bar color"
+msgstr "Цвет панели"
+
+#: includes/settings.php:89
+msgid "1 day"
+msgstr "1 день"
+
+#: includes/settings.php:90
+msgid "1 week"
+msgstr "1 неделя"
+
+#: includes/settings.php:91
+msgid "1 month"
+msgstr "1 месяц"
+
+#: includes/settings.php:92
+msgid "3 months"
+msgstr "3 месяца"
+
+#: includes/settings.php:93
+msgid "6 months"
+msgstr "6 месяцев"
+
+#: includes/settings.php:94
+msgid "1 year"
+msgstr "1 год"
+
+#: includes/settings.php:95
+msgid "infinity"
+msgstr "Навсегда"
+
+#: includes/settings.php:101
+msgid "Fade"
+msgstr "Затухание"
+
+#: includes/settings.php:102
+msgid "Slide"
+msgstr "Слайд"
+
+#: includes/settings.php:106
+msgid "Header"
+msgstr "Заголовок"
+
+#: includes/settings.php:152
+msgid "We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it."
+msgstr "Мы используем куки для наилучшего представления нашего сайта. Если Вы продолжите использовать сайт, мы будем считать что Вас это устраивает."
+
+#: includes/settings.php:153
+msgid "Ok"
+msgstr "Ok"
+
+#: includes/dashboard.php:509 includes/settings.php:200
+#: includes/welcome.php:379
+msgid "Cookie Notice"
+msgstr "Уведомление о куки"
+
+#: includes/settings.php:335
+msgid "Reset to defaults"
+msgstr "Сбросить на умолчания"
+
+#: includes/settings.php:423
+msgid "Button text"
+msgstr "Текст кнопки"
+
+#: includes/settings.php:429
+msgid "On scroll"
+msgstr "При перелистывании"
+
+#: includes/settings.php:410 includes/settings.php:433
+msgid "Script placement"
+msgstr "Размещение скрипта"
+
+#: includes/settings.php:411 includes/settings.php:434
+msgid "Deactivation"
+msgstr "Деактивация"
+
+#: includes/settings.php:439
+msgid "Animation"
+msgstr "Анимация"
+
+#: includes/settings.php:440
+msgid "Colors"
+msgstr "Цвета"
+
+#: includes/settings.php:976
+msgid "Enable if you want all plugin data to be deleted on deactivation."
+msgstr "Включите для удаления данных плагина при деактивации"
+
+#: includes/settings.php:638
+msgid "Enter the cookie notice message."
+msgstr "Введите сообщения уведомления о куки"
+
+#: includes/settings.php:783
+msgid "-- select page --"
+msgstr "-- выбор страницы --"
+
+#: includes/settings.php:894
+msgid "Select where all the plugin scripts should be placed."
+msgstr "Выберите где будут размещены скрипты плагина"
+
+#: includes/settings.php:1179
+msgid "Settings restored to defaults."
+msgstr "Настройки сброшены на умолчания"
+
+#: includes/settings.php:1274
+msgid "Are you sure you want to reset these settings to defaults?"
+msgstr "Точно хотите сбросить эти настройки на умолчания?"
+
+#: includes/settings.php:52 includes/welcome.php:456
+msgid "Top"
+msgstr "Сверху"
+
+#: includes/settings.php:53 includes/welcome.php:455
+msgid "Bottom"
+msgstr "Снизу"
+
+#: includes/settings.php:57 includes/settings.php:100
+msgid "None"
+msgstr "Отсутствует"

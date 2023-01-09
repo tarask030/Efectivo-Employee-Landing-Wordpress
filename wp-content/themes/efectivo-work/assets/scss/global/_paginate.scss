@@ -1,0 +1,37 @@
+.pagination {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin: 0;
+
+    a,
+    span {
+        color: $black;
+        font-family: $font;
+        font-size: 1.6rem;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 30px;
+        padding: 1rem .8rem;
+        @include link;
+        border-bottom: .2rem solid transparent;
+        margin: 0 .2rem;
+
+        &:hover {
+            border-bottom: .2rem solid $red;
+        }
+    }
+
+    .current {
+        border-bottom: .2rem solid $red;
+    }
+
+
+}
+
+body.search-results {
+    .pagination {
+        justify-content: center;
+    }
+}

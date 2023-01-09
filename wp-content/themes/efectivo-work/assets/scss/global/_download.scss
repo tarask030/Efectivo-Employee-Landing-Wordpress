@@ -1,0 +1,38 @@
+.download__list {
+    margin-bottom: 0;
+    display: block;
+    position: relative;
+    margin-top: 40px;
+
+    h3 {
+        color: $blue;
+    }
+
+    ul {
+        margin-bottom: 20px;
+
+        li {
+            @include rel-block;
+            padding-left: 1.2rem;
+
+            &:before {
+                width: .6rem;
+                height: .6rem;
+                background: $blue;
+                border-radius: 50%;
+                top: .7rem;
+                left: 0;
+                content: '';
+                @include abs-block;
+            }
+
+            a {
+                @include link;
+
+                &:hover {
+                    color: $green
+                }
+            }
+        }
+    }
+}

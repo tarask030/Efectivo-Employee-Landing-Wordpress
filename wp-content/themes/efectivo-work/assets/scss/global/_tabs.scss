@@ -1,0 +1,152 @@
+.tabs-right {
+    @include rel-block;
+    margin: 10rem 0 10rem 0;
+
+    @media (max-width: 767px) {
+        margin: 5rem 0;
+    }
+
+    &-foto {
+        @include abs-block;
+        top: 0;
+        right: 0;
+        max-width: 56.34146341463414%;
+        height: auto;
+        z-index: -1;
+        img {
+            -webkit-border-top-left-radius: 10px;
+            -webkit-border-bottom-left-radius: 10px;
+            -moz-border-radius-topleft: 10px;
+            -moz-border-radius-bottomleft: 10px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+
+            @media (max-width: 767px) {
+                border-radius: 1rem;
+            }
+        }
+
+        @media (max-width: 767px) {
+            @include rel-block;
+            z-index: 1;
+            max-width: 100%;
+            margin-bottom: 3rem;
+        }
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        @media(min-width: 1200px) {
+            width: 100% !important;
+        }
+
+        .tabs {
+            flex: 0 0 47.6rem;
+            padding-top: 8rem;
+
+            @media (max-width: 767px) {
+                flex: 0 0 100%;
+                padding-top: 0;
+            }
+
+        ul {
+            padding-right: 3rem;
+            padding-top: 4rem;
+
+            li {
+                color: $black;
+                font-family: $font;
+                font-size: 2rem;
+                font-weight: 700;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: 140%;
+                @include link;
+                cursor: pointer;
+                position: relative;
+                margin-bottom: 1.3rem;
+                &:hover {
+                    color: $red;
+                }
+                &:before {
+                    @include abs-block;
+                    top: .6rem;
+                    left: 0;
+                    width: 1.6rem;
+                    height: 1.5rem;
+                    background: url('../icons/icon-red-arrow.svg') top left no-repeat;
+                    content:'';
+                    opacity: 0;
+                    @include link;
+                }
+            }
+            .active {
+                padding-left: 3rem;
+                color: $red;
+                &:before {
+                    opacity: 1
+                }
+
+                @media (max-width: 768px) {
+                    .tabs-right-box {
+                    display: block !important;
+                }
+            }
+            }
+
+            @media (min-width: 768px) {
+                .tabs-right-box {display: none !important}
+            }
+        }
+    }
+
+    .txt {
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+        max-width: 68.4rem;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    .tabs-right-box {
+        padding: 8rem 6rem 8rem 6rem;
+        margin-top: 20rem;
+        background: $white;
+        width: 100%;
+
+        @media (max-width: 767px) {
+            padding: 0 0rem 3rem 0rem;
+            margin-top: 2rem;
+        }
+
+        .typo1 {
+            margin-bottom: 2.4rem;
+            br {display: none}
+            @media (max-width: 767px) {
+                display: none
+            }
+        }
+        .btn-red {
+            margin-top: 2rem;
+
+            @media (max-width: 767px) {
+                margin-top: 0;
+            }
+        }
+    }
+    }
+}
+
+body.page-template-template-page-services {
+    .tabs-right {
+        margin-bottom: 0;
+    }
+    .process-know-how {
+        padding-bottom: 10rem;
+        padding-top: 5rem;
+    }
+}

@@ -1,0 +1,340 @@
+# Translation of Plugins - Converter for Media &#8211; Optimize images | Convert WebP &amp; AVIF - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Converter for Media &#8211; Optimize images | Convert WebP &amp; AVIF - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-08-06 17:38:12+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.0-alpha.3\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Converter for Media &#8211; Optimize images | Convert WebP &amp; AVIF - Stable (latest release)\n"
+
+#. Plugin Name of the plugin
+msgid "Converter for Media"
+msgstr "Converter for Media"
+
+#: templates/components/fields/image_size.php:28
+msgid "Max. width:"
+msgstr "Макс. ширина:"
+
+#: templates/components/fields/image_size.php:41
+msgid "Max. height:"
+msgstr "Макс. высота:"
+
+#: src/Settings/Option/ImageResizeOption.php:48
+msgid "Maximum image dimensions"
+msgstr "Максимальные размеры изображения"
+
+#. translators: %1$s: images count
+#: src/Service/WpCliManager.php:64
+msgid "%1$s for AVIF and %2$s for WebP"
+msgstr "%1$s для AVIF и %2$s для WebP"
+
+#: src/Error/Notice/RewritesNotExecutedNotice.php:25
+msgid "Your server does not supports using .htaccess files from custom locations. Or your server requires additional configuration for the plugin to function properly."
+msgstr "Ваш сервер не поддерживает использование файлов .htaccess из пользовательских расположений. Или ваш сервер требует дополнительной настройки для правильной работы плагина."
+
+#. translators: %s: file extension
+#: src/Settings/Option/SupportedExtensionsOption.php:59
+msgid "%s (converting to AVIF only)"
+msgstr "%s (конвертировать только в AVIF)"
+
+#: templates/components/notices/clear-cache.php:42
+msgid "Done"
+msgstr "Готово"
+
+#. translators: %1$s: service name
+#: templates/components/notices/clear-cache.php:25
+msgid "You are using %1$s, right? Please follow the steps below for the plugin to function properly:"
+msgstr "Вы используете %1$s, верно? Пожалуйста, следуйте инструкциям ниже, чтобы плагин работал правильно:"
+
+#. translators: %1$s: button label
+#: src/Notice/CloudflareNotice.php:95
+msgid "If you agree, click %1$s."
+msgstr "Если вы согласны, нажмите %1$s."
+
+#. translators: %1$s: button label
+#: src/Notice/CloudflareNotice.php:84 src/Notice/LitespeedNotice.php:102
+#: src/Notice/LitespeedNotice.php:112 src/Notice/LitespeedNotice.php:126
+msgid "Click %1$s."
+msgstr "Нажмите %1$s."
+
+#. translators: %1$s: open anchor tag, %2$s: close anchor tag
+#: src/Plugin/Links.php:105 src/Settings/Option/ConversionMethodOption.php:71
+#: src/Settings/Option/ImageResizeOption.php:89
+#: src/Settings/Option/OutputFormatsOption.php:79
+msgid "%1$sUpgrade to PRO%2$s"
+msgstr "%1$sОбновить до ПРО%2$s"
+
+#: src/Service/DeactivationModalGenerator.php:93
+msgid "Images are not displayed in WebP format"
+msgstr "Изображения не отображаются в формате WebP"
+
+#. translators: %1$s: open anchor tag, %2$s: close anchor tag
+#: src/Service/DeactivationModalGenerator.php:81
+msgid "If your server does not meet the technical requirements, you can use \"Remote server\" as \"Conversion method\", in %1$sthe plugin settings%2$s."
+msgstr "Если ваш сервер не соответствует техническим требованиям, вы можете использовать «Удаленный сервер» в качестве «Метода преобразования» в %1$sнастройках плагина%2$s."
+
+#: src/Service/DeactivationModalGenerator.php:59
+msgid "Can you please take a moment to tell us why you are deactivating this plugin (anonymous answer)?"
+msgstr "Не могли бы вы уделить минутку, чтобы рассказать нам, почему вы деактивируете этот плагин (анонимный ответ)?"
+
+#. translators: %1$s: loader name
+#: src/Error/Notice/PassthruNotWorkingNotice.php:26
+msgid "%1$s loading mode is not compatible with your server. Sorry for the inconvenience."
+msgstr "Режим загрузки %1$s несовместим с сервером. Извините за доставленные неудобства."
+
+#. translators: %1$s: open strong tag, %2$s: close strong tag
+#: src/Error/Notice/RewritesNotWorkingNotice.php:26
+msgid "Redirects on your server are not working. Check the correct configuration for you in %1$sthe plugin FAQ%2$s. If you have checked the configuration, it means that your server does not support redirects from the .htaccess file or your server configuration is not compatible with this plugin."
+msgstr "Перенаправления на вашем сервере не работают. Проверьте правильную конфигурацию для вас в %1$sВопросы и ответы по плагину%2$s. Если вы проверили конфигурацию, это означает, что ваш сервер не поддерживает перенаправления из файла .htaccess или конфигурация вашего сервера не совместима с этим плагином."
+
+#: templates/components/notices/thanks.php:33
+msgid "Add plugin review"
+msgstr "Добавить отзыв для плагина"
+
+#: templates/components/notices/thanks.php:38
+#: templates/components/notices/upgrade.php:38
+msgid "Hide, do not show again"
+msgstr "Скрыть, не показывать больше"
+
+#: src/Error/Notice/RewritesCachedNotice.php:24
+msgid "Your server uses the cache for HTTP requests. The rules from .htaccess file or from Nginx configuration are not executed every time when the image is loaded, but the last redirect from cache is performed. With each request to image, your server should execute the rules from .htaccess file or from Nginx configuration. Now it only does this the first time and then uses cache. This means that if your server redirected image to WebP format the first time, it does so on every request. It should check the rules from .htaccess file or from Nginx configuration each time during request to image and redirect only when the conditions are met."
+msgstr "Ваш сервер использует кэш для обработки HTTP запросов. Инструкции из файла настроек .httaccess или настроек Nginx не выполняются каждый раз, когда загружается изображение. Вместо этого выполняется последнее перенаправление из кэша. Ваш сервер должен выполнять инструкции из файла настроек .httaccess или настроек Nginx для каждого запроса изображения. Сейчас он делает это только первый раз, а затем использует кэш. Это означает, что если Ваш сервер отдал изображение в формате WebP в первый раз, он делает именно это же на каждый следующий запрос. Вместо этого он должен проверять инструкции из файла настроек .httaccess или настроек Nginx каждый раз при запросе изображения и перенаправлять только, когда условия инструкций соблюдены."
+
+#. translators: %1$s: open strong tag, %2$s: close strong tag, %3$s: errors
+#. codes
+#: templates/components/widgets/errors.php:32
+msgid "%1$sError codes:%2$s %3$s"
+msgstr "%1$sКоды ошибок:%2$s %3$s"
+
+#: src/Error/Notice/PassthruExecutionNotice.php:33
+#: src/Error/Notice/RewritesCachedNotice.php:25
+#: src/Error/Notice/RewritesNotExecutedNotice.php:51
+#: src/Error/Notice/RewritesNotWorkingNotice.php:30
+msgid "In this case, please contact your server administrator."
+msgstr "В этом случае, пожалуйста, обратитесь к администратору вашего сервера."
+
+#: src/Error/Notice/SettingsIncorrectNotice.php:24
+msgid "The plugin settings are incorrect! Check them out and save them again. Please remember that you must have at least one option selected for each field."
+msgstr "Настройки плагина неверны! Проверьте их и сохраните снова. Помните, что для каждого поля должен быть выбран хотя бы один вариант."
+
+#. translators: %1$s: open anchor tag, %2$s: close anchor tag
+#: src/Plugin/Links.php:84
+msgid "%1$sSettings%2$s"
+msgstr "%1$sНастройки%2$s"
+
+#: src/Settings/Option/LoaderTypeOption.php:60
+msgid "via .htaccess"
+msgstr "через .htaccess"
+
+#. translators: %s: loader type
+#: src/Settings/Option/LoaderTypeOption.php:64
+msgid "%s (without rewrites in .htaccess files or Nginx configuration)"
+msgstr "%s (без перезаписи в файлах .htaccess или конфигурации Nginx)"
+
+#: src/Settings/Option/LoaderTypeOption.php:47
+msgid "By changing image loading mode it allows you to bypass some server configuration problems."
+msgstr "Изменяя режим загрузки изображений, вы можете обойти некоторые проблемы с конфигурацией сервера."
+
+#: src/Settings/Option/LoaderTypeOption.php:40
+msgid "Image loading mode"
+msgstr "Режим загрузки изображения"
+
+#: templates/components/widgets/regenerate.php:177
+#: templates/views/settings.php:47
+msgid "Please flush cache if you use caching plugin or caching via hosting."
+msgstr "Очистите кэш, если вы используете плагин кэширования или кэширование через хостинг."
+
+#. translators: %s: anchor tag
+#: src/Error/Notice/PassthruExecutionNotice.php:29
+msgid "Execution of the PHP file from path \"%s\" is blocked on your server, or access to this file is blocked. Add an exception and enable this file to be executed via HTTP request. To do this, check the security plugin settings (if you are using) or the security settings of your server."
+msgstr "Выполнение PHP-файла из пути \"%s\" заблокировано на вашем сервере, или доступ к этому файлу заблокирован. Добавьте исключение и разрешите выполнение этого файла через HTTP-запрос. Для этого проверьте настройки плагина безопасности (если вы его используете) или настройки безопасности вашего сервера."
+
+#: templates/components/widgets/about.php:24
+msgid "The plugin in default loading mode (via .htaccess) does not change file URLs, so there are no problems with saving the page to the cache and the page generation time does not increase."
+msgstr "Плагин в режиме загрузки по умолчанию (через .htaccess) не изменяет URL-адреса файлов, поэтому не возникает проблем с сохранением страницы в кэш и время генерации страницы не увеличивается."
+
+#: src/Service/DeactivationModalGenerator.php:60
+msgid "Submit and Deactivate"
+msgstr "Отправить и деактивировать"
+
+#: src/Service/DeactivationModalGenerator.php:136
+msgid "Other reason"
+msgstr "Другая причина"
+
+#: src/Service/DeactivationModalGenerator.php:109
+msgid "This plugin broke my website"
+msgstr "Плагин сломал мой сайт"
+
+#: src/Service/DeactivationModalGenerator.php:127
+msgid "This is a temporary deactivation"
+msgstr "Это временная деактивация"
+
+#: src/Service/DeactivationModalGenerator.php:111
+msgid "What exactly happened?"
+msgstr "Что именно произошло?"
+
+#: src/Service/DeactivationModalGenerator.php:118
+msgid "I found a better plugin"
+msgstr "Я нашёл лучший плагин"
+
+#: src/Service/DeactivationModalGenerator.php:69
+msgid "I have \"Server configuration error\" in plugin settings"
+msgstr "У меня в настройках плагина есть \"Ошибка конфигурации сервера\""
+
+#: src/Service/DeactivationModalGenerator.php:138
+msgid "What is reason? What can we improve for you?"
+msgstr "В чем причина? Что мы можем улучшить для вас?"
+
+#: src/Service/DeactivationModalGenerator.php:86
+msgid "What is your error? Have you been looking for solution to this issue?"
+msgstr "В чем заключается ваша ошибка? Искали ли вы решение этой проблемы?"
+
+#: src/Service/DeactivationModalGenerator.php:61
+msgid "Skip and Deactivate"
+msgstr "Пропустить и деактивировать"
+
+#: src/Service/DeactivationModalGenerator.php:120
+msgid "What is name of this plugin? Why is it better?"
+msgstr "Как называется этот плагин? Почему он лучше?"
+
+#: templates/components/widgets/regenerate.php:195
+msgid "Additional informations about process:"
+msgstr "Дополнительная информация о процессе:"
+
+#: src/Settings/Option/ExtraFeaturesOption.php:51
+msgid "Options allow you to enable new functionalities that will increase capabilities of plugin"
+msgstr "Параметры для включения новых функций, которые увеличивают возможности плагина"
+
+#: src/Settings/Option/ExtraFeaturesOption.php:69
+msgid "Enable cron to automatically convert images from outside Media Library (images from Media Library are converted immediately after upload)"
+msgstr "Включите cron для автоматического преобразования изображений из внешней библиотеки мультимедиа (изображения из библиотеки мультимедиа конвертируются сразу после загрузки)"
+
+#: src/Settings/Option/ExtraFeaturesOption.php:65
+msgid "Keep images metadata stored in EXIF or XMP formats (unavailable for GD conversion method)"
+msgstr "Хранить метаданные изображений в форматах EXIF или XMP (недоступно для способа преобразования GD)"
+
+#. translators: %1$s: server path
+#: src/Error/Notice/PathHtaccessNotWritableNotice.php:26
+msgid "Unable to create or edit .htaccess file (function is_readable() or is_writable() returns false). Change directory permissions. The current using path of file is: %1$s. Please contact your server administrator."
+msgstr "Невозможно создать или отредактировать файл .htaccess (функция is_readable() или is_writable() возвращает false). Измените права доступа к каталогу. Текущий путь использования файла: %1$s. Обратитесь к администратору вашего сервера."
+
+#. translators: %1$s: filter name, %2$s: server path
+#: src/Error/Notice/PathWebpDuplicatedNotice.php:26
+msgid "The paths for /uploads files and for saving converted WebP files are the same. Change them using filter %1$s. The current path for them is: %2$s."
+msgstr "Пути для файлов /uploads и для сохранения преобразованных файлов WebP одинаковы. Измените их с помощью фильтра %1$s. Текущий путь для них: %2$s."
+
+#. translators: %1$s: filter name, %2$s: server path, %3$s: open anchor tag,
+#. %4$s: close anchor tag
+#: src/Error/Notice/PathUploadsUnavailableNotice.php:26
+msgid "The path for /uploads files does not exist (function is_dir() returns false). Use filter %1$s to set the correct path. The current using path is: %2$s. Please read %3$sthe plugin FAQ%4$s to learn more."
+msgstr "Путь для файлов /uploads не существует (функция is_dir() возвращает false). Используйте фильтр %1$s для установки правильного пути. Текущий используемый путь: %2$s. Пожалуйста, прочитайте %3$sВопросы и ответы по плагину%4$s, чтобы узнать больше."
+
+#. translators: %1$s: filter name, %2$s: server path, %3$s: open anchor tag,
+#. %4$s: close anchor tag
+#: src/Error/Notice/PathWebpNotWritableNotice.php:26
+msgid "The path for saving converted WebP files does not exist and cannot be created (function is_writable() returns false). Use filter %1$s to set the correct path. The current using path is: %2$s. Please read %3$sthe plugin FAQ%4$s to learn more."
+msgstr "Путь для сохранения преобразованных WebP-файлов не существует и не может быть создан (функция is_writable() возвращает false). Используйте фильтр %1$s для установки правильного пути. Текущий используемый путь: %2$s. Пожалуйста, прочитайте %3$sВопросы и ответы по плагину%4$s, чтобы узнать больше."
+
+#: templates/components/widgets/errors.php:15
+msgid "Server configuration error"
+msgstr "Ошибка конфигурации сервера"
+
+#. translators: %1$s: anchor tag, %2$s: anchor tag, %3$s: anchor tag
+#: src/Error/Notice/RestApiDisabledNotice.php:26
+msgid "The REST API on your website is not available. Please verify this and try again. Pay special attention to the filters: %1$s, %2$s and %3$s."
+msgstr "REST API на вашем сайте недоступен. Проверьте это и повторите попытку. Обратите особое внимание на фильтры: %1$s, %2$s и %3$s."
+
+#: src/Settings/Option/ExtraFeaturesOption.php:44
+msgid "Extra features"
+msgstr "Дополнительные возможности"
+
+#. translators: %s: loader type
+#: src/Settings/Option/LoaderTypeOption.php:59
+msgid "%s (recommended)"
+msgstr "%s (рекомендовано)"
+
+#: templates/views/settings.php:46
+msgid "Changes were successfully saved!"
+msgstr "Изменения сохранены!"
+
+#: templates/components/widgets/options.php:44
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#: templates/components/widgets/regenerate.php:22
+msgid "An error occurred while connecting to REST API. Please try again."
+msgstr "Возникла ошибка при подключении к REST API. Попробуйте снова."
+
+#. translators: %s progress value
+#: src/Service/WpCliManager.php:135
+#: templates/components/widgets/regenerate.php:151
+msgid "Saving the weight of your images: %s"
+msgstr "Экономия объёма файлов изображений: %s"
+
+#: src/Settings/Option/ConversionMethodOption.php:57
+msgid "Conversion method"
+msgstr "Способ преобразования"
+
+#: src/Service/WpCliManager.php:128
+#: templates/components/widgets/regenerate.php:176
+msgid "The process was completed successfully. Your images have been converted!"
+msgstr "Процесс успешно завершён. Ваши изображения конвертированы."
+
+#: templates/components/widgets/support.php:13
+msgid "We are waiting for your message"
+msgstr "Мы ожидаем вашего сообщения"
+
+#: templates/components/widgets/options-sidebar.php:51
+msgid "Deactivate Token"
+msgstr "Деактивировать токен"
+
+#: templates/components/widgets/options-sidebar.php:47
+msgid "Activate Token"
+msgstr "Активировать токен"
+
+#: src/Settings/Option/AccessTokenOption.php:48
+msgid "Access Token"
+msgstr "Токен доступа"
+
+#: src/Error/Notice/ApiLimitExceededNotice.php:24
+msgid "Your limit for the number of converted images in the current billing period has been exceeded. You can wait until the end of the billing period. Then your limit will be renewed. Another solution is to cancel the current subscription and buy a new one with a new limit."
+msgstr "Ваш лимит на количество преобразованных изображений в текущем расчетном периоде превышен. Вы можете дождаться окончания расчетного периода. Затем ваш лимит будет обновлен. Другое решение — отменить текущую подписку и купить новую с новым лимитом."
+
+#: src/Error/Notice/AccessTokenInvalidNotice.php:24
+msgid "Your access token is invalid or your subscription has expired. Check the value given in and try to activate it again."
+msgstr "Ваш токен доступа недействителен или срок действия вашей подписки истек. Проверьте указанное значение и попробуйте активировать его снова."
+
+#: src/Conversion/Method/RemoteMethod.php:87
+#: src/Conversion/Method/RemoteMethod.php:92
+msgid "Remote server"
+msgstr "Удаленный сервер"
+
+#: templates/components/notices/welcome.php:20
+msgid "Thank you for installing our plugin Converter for Media!"
+msgstr "Спасибо за установку нашего плагина Converter for Media!"
+
+#: templates/components/notices/thanks.php:19
+msgid "Thank you for using our plugin Converter for Media!"
+msgstr "Благодарим вас за использование нашего плагина Converter for Media!"
+
+#: src/Settings/Option/SupportedDirectoriesOption.php:46
+msgid "Files from these directories will be converted to output formats."
+msgstr "Файлы из этих каталогов будут преобразованы в выходные форматы."
+
+#. translators: %1$s: open anchor tag, %2$s: close anchor tag
+#: templates/components/widgets/regenerate.php:183
+msgid "Do you want to know how a plugin works and how to check if it is working properly? Read %1$sour manual%2$s."
+msgstr "Хотите знать, как работает плагин и как проверить, правильно ли он работает? Прочтите %1$sнаше руководство%2$s."
+
+#. translators: %1$s: open anchor tag, %2$s: close anchor tag
+#: src/Settings/Option/AccessTokenOption.php:58
+msgid "To manage your subscriptions, please visit %1$sour website%2$s."
+msgstr "Для управления подписками, посетите %1$sнаш сайт%2$s."
+
+#: templates/components/notices/thanks.php:24
+msgid "We are glad that you are using our plugin and we hope you are satisfied with it. If you want, you can support us in the development of the plugin by adding a plugin review. This is very important and gives us the opportunity to create even better tools for you. Thank you to everyone."
+msgstr "Мы рады, что вы используете наш плагин, и надеемся, что вы удовлетворены его работой. Если хотите, вы можете поддержать нас в разработке плагина, добавив отзыв плагину. Это очень важно и дает нам возможность создавать для вас еще лучшие инструменты. Всем спасибо."

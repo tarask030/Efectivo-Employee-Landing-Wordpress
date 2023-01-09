@@ -1,0 +1,30 @@
+<?php
+/**
+ * ===============================
+ * HOME BENEFIST.PHP - main header file
+ * ===============================
+ *
+ * @package EFECTIVO
+ * @since 1.0.0
+ * @version 1.0.0
+ */
+$benefist_cat_title = get_field( 'benefist_cat_title' );
+?>
+
+<section class="home-catalog" id="catalogue-benefist">
+
+	<div class="home-catalog-cnt">
+
+		<div class="container">	
+
+		<?php if ($benefist_cat_title): ?>
+			<h2 data-aos="fade-up">
+				<?php echo $benefist_cat_title; ?>
+			</h2>
+		<?php endif ?>	
+
+		</div>
+
+	</div>
+	
+</section>
